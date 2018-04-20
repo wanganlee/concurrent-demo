@@ -7,6 +7,7 @@ public class LockDemo{
       	// do something ...
       }catch(Exception e){
 	e.printStackTrace();
+	LOGGER.error("the method call error! the error message is:{},e:{}!",e.getMessage(),e);
       }finally{
       	lock.unlock();
       }
