@@ -1,0 +1,14 @@
+public class LockDemo{
+  private static final Logger LOGGER = LoggerFactory.getLogger(LockDemo.class);
+
+  public void lock(){
+      Lock lock = new ReentrantLock(false);
+      try{
+      	// do something ...
+      }catch(Exception e){
+	e.printStackTrace();
+      }finally{
+      	lock.unlock();
+      }
+  }
+}
